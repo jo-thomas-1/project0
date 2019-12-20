@@ -1,0 +1,28 @@
+/*Basic CSS Stylesheet*/
+
+p {
+	text-align: justify;
+}
+
+#header {
+	background-color: #383434;
+	padding: 15px;
+}
+
+#header a, #header h1 {
+	color: white;
+	font-weight: bold;
+}
+
+#menu a {
+	border: 1px solid white;
+	padding: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+#menu a:hover {
+	color: red;
+	text-decoration: none;
+	font-style: italic;
+}
