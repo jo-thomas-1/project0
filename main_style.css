@@ -5,8 +5,11 @@ p {
 }
 
 #header {
-	background-color: #383434;
+	background-image: url('images/banner.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
 	padding: 15px;
+	border-bottom: 2px solid black;
 }
 
 #header a, #header h1 {
@@ -15,14 +18,55 @@ p {
 }
 
 #menu a {
-	border: 1px solid white;
+	border: 2px solid white;
+	background-color: #383434;
+	border-radius: 15%;
 	padding: 2px;
 	padding-left: 4px;
 	padding-right: 4px;
+	margin: 1px;
+	font-size: 105%;
 }
 
 #menu a:hover {
-	color: red;
+	color: #383434;
+	border: 3px solid #383434;
+	background-color: white;
 	text-decoration: none;
-	font-style: italic;
+}
+
+#banner > .container {
+	width: 100%;
+	height: 270px;
+	overflow: hidden;
+}
+
+#banner > .container > img {
+	width: 100%;
+	margin-top: -10px;
+}
+
+.goto_button {
+	height: 22px;
+	transform: rotate(180deg);
+}
+
+p > code {
+	color: #ff0088;
+	background-color: #ffc9e5;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.border_box {
+	padding: 7px;
+	border: 2px solid black;
+}
+
+.inner_border_box {
+	padding: 7px;
+	margin: 5px;
+	margin-left: 35px;
+	margin-right: 35px;
+	border: 2px solid black;
 }
