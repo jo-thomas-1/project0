@@ -8,7 +8,7 @@ must use at least,
 -* four different .html pages
 -* one list (ordered or unordered)
 - one table
-- one image
+-* one image
 -* one stylesheet file
 
 stylesheet must use at least
@@ -23,9 +23,9 @@ must use Bootstrap 4 with at least
 -* two Bootstrap columns using Bootstrap’s grid model
 
 stylesheet must use at least
-- one SCSS variable
-- one example of SCSS nesting
-- one use of SCSS inheritance
+-* one SCSS variable
+-* one example of SCSS nesting
+-* one use of SCSS inheritance
 
 In README.md, include a short writeup describing your project,
 
@@ -42,7 +42,8 @@ Files in project0
 - css.html  : about css code
 - sass.html : about sass code
 
-- main_style.css : basic css stylesheet
+- main_style.css  : basic css stylesheet
+- sass_style.scss : sass flie for styling
 
 ---------------------
 Project Process
