@@ -1,0 +1,62 @@
+/*SASS stylesheet*/
+
+$color_dark_grey: #383434;
+
+#header {
+	background-image: url('images/banner.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding: 15px;
+	border-bottom: 2px solid black;
+
+	a, h1 {
+		color: white;
+		font-weight:bold;
+	}
+}
+
+#menu {
+	a {
+		border: 2px solid white;
+		background-color: $color_dark_grey;
+		border-radius: 15%;
+		padding: 2px;
+		padding-left: 4px;
+		padding-right: 4px;
+		margin: 1px;
+		font-size: 105%;
+	}
+
+	a:hover {
+		color: $color_dark_grey;
+		border: 3px solid $color_dark_grey;
+		background-color: white;
+		text-decoration: none;
+	}
+}
+
+@media (max-width: 500px) {
+	#header h1 {
+		font-size: 150%;
+	}
+
+	#menu a {
+		font-size: 50%;
+	}
+}
+
+%borderline_box {
+	padding: 7px;
+	border: 2px solid black;
+}
+
+.border_box {
+	@extend %borderline_box;
+}
+
+.inner_border_box {
+	@extend %borderline_box;
+	margin: 5px;
+	margin-left: 35px;
+	margin-right: 35px;
+}

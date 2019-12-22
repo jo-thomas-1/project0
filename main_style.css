@@ -4,35 +4,20 @@ p {
 	text-align: justify;
 }
 
-#header {
-	background-image: url('images/banner.jpg');
-	background-repeat: no-repeat;
-	background-size: 100%;
-	padding: 15px;
-	border-bottom: 2px solid black;
+.code {
+	color: black;
+	background-color: #e3ddd3;
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border-left: 3px solid #ff8400;
 }
 
-#header a, #header h1 {
-	color: white;
-	font-weight: bold;
-}
-
-#menu a {
-	border: 2px solid white;
-	background-color: #383434;
-	border-radius: 15%;
-	padding: 2px;
-	padding-left: 4px;
-	padding-right: 4px;
-	margin: 1px;
-	font-size: 105%;
-}
-
-#menu a:hover {
-	color: #383434;
-	border: 3px solid #383434;
-	background-color: white;
-	text-decoration: none;
+p > code {
+	color: #ff0088;
+	background-color: #ffc9e5;
+	padding-left: 2px;
+	padding-right: 2px;
 }
 
 #banner > .container {
@@ -46,27 +31,10 @@ p {
 	margin-top: -10px;
 }
 
-.goto_button {
-	height: 22px;
-	transform: rotate(180deg);
+.goto_button img {
+	height: 20px;
 }
 
-p > code {
-	color: #ff0088;
-	background-color: #ffc9e5;
-	padding-left: 2px;
-	padding-right: 2px;
-}
-
-.border_box {
-	padding: 7px;
-	border: 2px solid black;
-}
-
-.inner_border_box {
-	padding: 7px;
-	margin: 5px;
-	margin-left: 35px;
-	margin-right: 35px;
-	border: 2px solid black;
+.goto_button img {
+	height: 20px;
 }
