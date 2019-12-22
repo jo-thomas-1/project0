@@ -11,7 +11,7 @@ $color_dark_grey: #383434;
 
 	a, h1 {
 		color: white;
-		font-weight:bold;
+		font-weight: bold;
 	}
 }
 
@@ -20,6 +20,8 @@ $color_dark_grey: #383434;
 		border: 2px solid white;
 		background-color: $color_dark_grey;
 		border-radius: 15%;
+		-webkit-border-radius: 15%;
+		-moz-border-radius: 15%;
 		padding: 2px;
 		padding-left: 4px;
 		padding-right: 4px;
@@ -63,4 +65,12 @@ $color_dark_grey: #383434;
 	margin: 5px;
 	margin-left: 35px;
 	margin-right: 35px;
+}
+
+.table-striped {
+	th, td {
+		padding: 5px;
+		border: 1px solid #bfbfbf;
+		text-align: justify;
+	}
 }

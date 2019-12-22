@@ -15,6 +15,8 @@
   border: 2px solid white;
   background-color: #383434;
   border-radius: 15%;
+  -webkit-border-radius: 15%;
+  -moz-border-radius: 15%;
   padding: 2px;
   padding-left: 4px;
   padding-right: 4px;
@@ -50,6 +52,12 @@
   margin: 5px;
   margin-left: 35px;
   margin-right: 35px;
+}
+
+.table-striped th, .table-striped td {
+  padding: 5px;
+  border: 1px solid #bfbfbf;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=sass_style.css.map */
