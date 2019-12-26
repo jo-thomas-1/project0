@@ -28,9 +28,96 @@
 			</div>
 		</div>
 		<div class="row" id="body">
-			<div class="container">
+			<div class="container margin_small_device">
 				<br>
 				<p><b>Syntactically Awesome Style Sheets (Sass)</b> is a style sheet language initially designed by Hampton Catlin and developed by Natalie Weizenbaum. After its initial versions, Weizenbaum and Chris Eppstein have continued to extend Sass with SassScript, a simple scripting language used in Sass files.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container margin_small_device">
+				<p>Here is basic HTML file</p>
+				<p class="code_filename">hello.html</p>
+				<code class="code">
+					&lt!DOCTYPE html&gt<br>
+					&lthtml&gt<br> <!-- html -->
+					&nbsp&nbsp&nbsp&nbsp&lthead&gt<br> <!-- head -->
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lttitle&gt <!-- title -->
+					Webpage Title
+					&lt/title&gt<br> <!-- /title -->
+					&nbsp&nbsp&nbsp&nbsp&lt/head&gt<br> <!-- /head -->
+					&nbsp&nbsp&nbsp&nbsp&ltbody&gt<br> <!-- body -->
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltp&gt <!-- p -->
+					Hello, World!
+					&lt/p&gt<br> <!-- /p -->
+					&nbsp&nbsp&nbsp&nbsp&lt/body&gt<br> <!-- /body -->
+					&lt/html&gt<br> <!-- /html -->
+				</code>
+				<p></p>
+				<p>And also a SASS style file</p>
+				<p class="code_filename">sass_style.scss</p>
+				<code class="code">
+					/*basic variable*/<br>
+					$color = red;<br>
+					<br>
+					p {<br>
+					&nbsp&nbsp&nbsp&nbspbackground-color: $color;<br>
+					}<br>
+				</code>
+				<p></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container margin_small_device">
+				<p>The SASS code cannot be directly used as browsers will not be able to interpret the same as required. So the SASS code is converted into CSS which the browsers can interpret. The below command is used to do this conversion.</p>
+				<code class="code terminal">
+					sass sassFileName.scss newCssFlieName.css
+				</code>
+				<p></p>
+				<p>This manual conversion is not required every time a change is made to the initial SASS file. The generated CSS file can be made to track changes in the original SASS file and make necessary changes automatically.</p>
+				<code class="code terminal">
+					sass --watch sassFileName.scss:newCssFlieName.css
+				</code>
+				<p></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container margin_small_device">
+				<p>SASS also allows nesting of selectors to keep the code organized and simple.</p>
+				<code class="code">
+					div {<br>
+					&nbsp&nbsp&nbsp&nbspfont-size: 20px;<br>
+					<br>
+					&nbsp&nbsp&nbsp&nbspp {<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspcolor: blue;<br>
+					&nbsp&nbsp&nbsp }<br>
+					<br>
+					&nbsp&nbsp&nbsp&nbspli {<br>
+					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspcolor: green;<br>
+					&nbsp&nbsp&nbsp }<br>
+					}<br>
+				</code>
+				<p></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container margin_small_device">
+				<p>Sass Inheritance, @extend is used to share a set of CSS properties from one selector to another. The @extend feature of Sass allows classes to share a set of properties with one another. In complicated CSS where many classes are put together, duplication of properties may occur.</p>
+				<code class="code">
+					%mainSegment {<br>
+					&nbsp&nbsp&nbsp&nbspfont-family: sans-serif;<br>
+					&nbsp&nbsp&nbsp&nbspfont-size: 18px;<br>
+					&nbsp&nbsp&nbsp&nbspfont-weight: bold;<br>
+					&nbsp&nbsp&nbsp&nbspborder: 1px solid black;<br>
+					&nbsp&nbsp&nbsp&nbsppadding: 20px;<br>
+					&nbsp&nbsp&nbsp&nbspmargin: 20px;<br>
+					}<br>
+					<br>
+					.className {<br>
+					&nbsp&nbsp&nbsp&nbsp@extend %mainSegment;<br>
+					&nbsp&nbsp&nbsp&nbspbackground-color: green;<br>
+					}<br>
+				</code>
+				<p></p>
 			</div>
 		</div>
 	</body>

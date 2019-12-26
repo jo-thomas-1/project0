@@ -9,6 +9,15 @@ table {
 	width: 100%;
 }
 
+.code_filename {
+	width: 100%;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	color: black;
+	background-color: #ff8400;
+	font-weight: bold;
+}
+
 .code {
 	color: black;
 	background-color: #e3ddd3;
@@ -16,6 +25,12 @@ table {
 	width: 100%;
 	padding: 10px;
 	border-left: 3px solid #ff8400;
+}
+
+.terminal {
+	color: white;
+	background-color: black;
+	border-color: green;
 }
 
 p > code, td > code {

@@ -42,6 +42,11 @@
   #menu a {
     font-size: 50%;
   }
+
+  .margin_small_device {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 .inner_border_box, .border_box {
   padding: 7px;

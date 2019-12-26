@@ -28,9 +28,73 @@
 			</div>
 		</div>
 		<div class="row" id="body">
-			<div class="container">
+			<div class="container margin_small_device">
 				<br>
 				<p><b>Cascading Style Sheets (CSS)</b> is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container margin_small_device">
+				<p>HTML was NEVER intended to contain tags for formatting a web page. HTML was created to describe the content of a web page, like:<br>
+				<code>&lth1&gtThis is a heading&lt/h1&gt</code>
+				<br>
+				<code>&ltp&gtThis is a paragraph.&lt/p&gt</code>
+				<br>
+				<p>When tags like <code>&ltfont&gt</code>, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.</p>
+				<p>To solve this problem, the World Wide Web Consortium (W3C) created CSS.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container margin_small_device">
+				<p>A CSS rule-set consists of a selector and a declaration block</p>
+				<img src="images/css.jpg" width="100%" style="margin: 10px;">
+				<p>The selector points to the HTML element to style. The declaration block contains one or more declarations separated by semicolons. Each declaration includes a CSS property name and a value, separated by a colon. A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container margin_small_device">
+				<h5>CSS element Selector</h5>
+				<p>The element selector selects HTML elements based on the element name.</p>
+				<code class="code">
+					p {<br>
+  						&nbsp&nbsp&nbsp&nbsptext-align: center;<br>
+  						&nbsp&nbsp&nbsp&nbspcolor: red;<br>
+					}
+				</code>
+				<p></p>
+			</div>
+			<div class="container margin_small_device">
+				<h5>CSS id Selector</h5>
+				<p>The id selector uses the id attribute of an HTML element to select a specific element. The id of an element is unique within a page, so the id selector is used to select one unique element. To select an element with a specific id, a hash (#) character, followed by the id of the element is used.</p>
+				<code class="code">
+					#para1 {<br>
+  						&nbsp&nbsp&nbsp&nbsptext-align: center;<br>
+  						&nbsp&nbsp&nbsp&nbspcolor: red;<br>
+					}
+				</code>
+				<p></p>
+			</div>
+			<div class="container margin_small_device">
+				<h5>CSS class Selector</h5>
+				<p>The class selector selects HTML elements with a specific class attribute. To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+				<code class="code">
+					.center {<br>
+  						&nbsp&nbsp&nbsp&nbsptext-align: center;<br>
+  						&nbsp&nbsp&nbsp&nbspcolor: red;<br>
+					}
+				</code>
+				<p></p>
+			</div>
+			<div class="container margin_small_device">
+				<h5>CSS Universal Selector</h5>
+				<p>The universal selector (*) selects all HTML elements on the page.</p>
+				<code class="code">
+					* {<br>
+  						&nbsp&nbsp&nbsp&nbsptext-align: center;<br>
+  						&nbsp&nbsp&nbsp&nbspcolor: red;<br>
+					}
+				</code>
+				<p></p>
 			</div>
 		</div>
 	</body>
